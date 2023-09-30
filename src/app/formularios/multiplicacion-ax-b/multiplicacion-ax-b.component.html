@@ -1,0 +1,13 @@
+<div class="container">
+    <mat-form-field>
+        <input type="number" matInput [(ngModel)]="num1" placeholder="Numer">
+    </mat-form-field>
+    <td></td>
+    <mat-form-field>
+        <input type="number" matInput [(ngModel)]="num2" placeholder="Numer">
+    </mat-form-field>
+    <td></td>
+    <button mat-raised-button color="primary" (click)="multiplicar()">Calcular</button>
+    <td></td>
+    <h2>La multiplicacion es: {{result}}</h2>
+</div>
