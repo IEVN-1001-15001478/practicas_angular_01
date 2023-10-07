@@ -1,0 +1,56 @@
+
+   <div>
+   <h1 style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black; background-color: gray; margin-right: 40%; margin-left: 40%; font-size: 35px;
+    margin-top: 5px; border-radius: 5px;">Cinepolis</h1>
+    
+    <div class="caja1"  style="border: ridge #FFFF 5px; border-radius: 2%; padding: 2%;" >
+        <h2 style="margin-top: -7%; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 25px;">Entradas</h2>
+        
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Nombre</span>
+        <input type="text" [(ngModel)]="nombre" class="form-control" placeholder="Nombre del cliente" aria-label="Username" aria-describedby="addon-wrapping" id="nombre">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Cantidad de Compradores</span>
+        <input type="number" [(ngModel)]="cantidadComprador" class="form-control" placeholder="Cantidad de Compradores" aria-label="Username" aria-describedby="addon-wrapping" id="compradores">
+    </div>
+    <div class="cineco">
+    <span class="input-group-text" id="addon-wrapping" >Tarjeta Cineco</span>
+    <div class="form-check">
+        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="tarjetaSi">
+        <label  class="form-check-label" for="flexRadioDefault1" value="tarjeta">
+            Si
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="tarjetaNo">
+        <label  class="form-check-label" for="flexRadioDefault1" value="tarjetaNo">
+            No
+        </label>
+      </div>
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Cantidad de boletas</span>
+        <input type="number" [(ngModel)]="nBoletas" class="form-control" placeholder="Cantidad de boletas" aria-label="Username" aria-describedby="addon-wrapping" id="nBoletas">
+    </div>
+</div>
+
+<div class="acciones" style="border: ridge #FFFF 5px; border-radius: 2%; padding: 2%;">
+    <h2 style="margin-top: -9%; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 25px;">Acciones</h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-light" type="button" style="width: 150px; max-width: 100%;" (click)="CalcularDescuento()">Procesar</button>
+            <button class="btn btn-light" type="reset" style="width: 150px; max-width: 100%" (click)="reset()">  Reset </button>
+        </div>
+</div>
+
+<div class="salida" style="border: ridge #FFFF 5px; border-radius: 2%; padding: 2%;">
+    <h2 style="margin-top: -7%; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 25px;">Salidas</h2>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Valor a Pagar</span>
+        <h2 style="margin-left: 2%; margin-top: 4%;">  $ {{result}}</h2>
+        <br>
+        <h3 style="margin-left: 0%; margin-top: 20%; color: red; background-color: aliceblue; opacity: .8; text-align: center;"> {{mensaje}}</h3>
+    </div>
+</div>
+</div>

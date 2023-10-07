@@ -3,3 +3,11 @@
     color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } */
+body{
+    background-image: url("cinepolis.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: aliceblue;
+    opacity: .9;
+}
