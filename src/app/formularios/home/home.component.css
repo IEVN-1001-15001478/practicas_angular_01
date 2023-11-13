@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fondo{
+    background-color: transparent;
+    color: black;
+    position: fixed;
+}
+.contenedor__principal{
+    padding-top: 100px;
+    
+}
+.contenedor__titulo{
+    align-items: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contenedor__titulo h1{
+    color: black;
+    font-weight: bold;
+}
+.contenedor__titulo span{
+    color: black;
+}
+.contenedor__titulo span span{
+    color: aquamarine;
+}
+.lobo{
+    width: 400px;
+    height: 400px;
+}

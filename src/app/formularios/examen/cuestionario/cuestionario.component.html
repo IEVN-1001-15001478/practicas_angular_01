@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English test</title>
+</head>
+<body>
+    <br>
+    <h1>English test</h1>
+    <br>
+    <form class="formulario" [formGroup]="questionario" (ngSubmit)="onSubmit()" >
+        <h3>1. Indique cuál es el significado de "Branch":</h3>
+        <label>
+            <input type="radio" name="pregunta1" id="pregunta1" value="opcion1" (click)="answer1(false)" > Factura
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta1" id="pregunta1" value="opcion2" (click)="answer1(true)"> Sucursal
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta1" id="pregunta1" value="opcion3" (click)="answer1(false)"> Empresa
+        </label>
+        <br><br>
+
+        <h3>2. Indique cuál es el significado de "Nurse":</h3>
+        <label>
+            <input type="radio" name="pregunta2" id="pregunta2" value="opcion1" (click)="answer2(false)"> Profesora
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta2" id="pregunta2" value="opcion2" (click)="answer2(true)"> Niñera
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta2" id="pregunta2" value="opcion3" (click)="answer2(false)"> Maestra
+        </label>
+        <br><br>
+
+        <h3>3. Indique cuál es el sustantivo femenino de: "Policeman":</h3>
+        <label>
+            <input type="radio" name="pregunta3" id="pregunta3" value="opcion1" (click)="answer3(true)"> Policewoman
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta3" id="pregunta3" value="opcion2" (click)="answer3(false)"> Police woman
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta3" id="pregunta3" value="opcion3" (click)="answer3(false)"> Poliwoman
+        </label>
+        <br><br>
+
+        <h3>4. Señale cómo se escribe en inglés la palabra "Pegamento":</h3>
+        <label>
+            <input type="radio" name="pregunta4" id="pregunta4" value="opcion1" (click)="answer4(false)"> Cutter
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta4" id="pregunta4" value="opcion2" (click)="answer4(true)"> Glue
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta4" id="pregunta4" value="opcion3" (click)="answer4(false)"> Lock
+        </label>
+        <br><br>
+
+        <h3>5. Indique cuál es el significado de "Butterfly":</h3>
+        <label>
+            <input type="radio" name="pregunta5" id="pregunta5" value="opcion1" (click)="answer5(false)"> Luciérnaga
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta5" id="pregunta5" value="opcion2" (click)="answer5(true)"> Mariposa
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta5" id="pregunta5" value="opcion3" (click)="answer5(false)"> Libélula
+        </label>
+        <br><br>
+
+        <h3>6. Indique el antónimo de: "Clean"</h3>
+        <label>
+            <input type="radio" name="pregunta6" id="pregunta6" value="opcion1" (click)="answer6(false)"> Boring
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta6" id="pregunta6" value="opcion2" (click)="answer6(false)"> Empty
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta6" id="pregunta6" value="opcion3" (click)="answer6(true)"> Dirty
+        </label>
+        <br><br>
+
+        <h3>7. Indique cuál es el significado de "Wood":</h3>
+        <label>
+            <input type="radio" name="pregunta7" id="pregunta7" value="opcion1" (click)="answer7(true)"> Bosque
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta7" id="pregunta7" value="opcion2" (click)="answer7(false)"> Arbusto
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta7" id="pregunta7" value="opcion3" (click)="answer7(false)"> Jardín
+        </label>
+        <br><br>
+
+        <h3>8. Indique cuál es el significado de "Omelette":</h3>
+        <label>
+            <input type="radio" name="pregunta8" id="pregunta8" value="opcion1" (click)="answer8(true)"> Tortilla
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta8" id="pregunta8" value="opcion2" (click)="answer8(false)"> Empanada
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta8" id="pregunta8" value="opcion3" (click)="answer8(false)"> Pizza
+        </label>
+        <br><br>
+
+        <h3>9. Indique cuál es el significado de "Tip"</h3>
+        <label>
+            <input type="radio" name="pregunta9" id="pregunta9" value="opcion1" (click)="answer9(false)"> Cuenta
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta9" id="pregunta9" value="opcion2" (click)="answer9(false)"> Cenicero
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta9" id="pregunta9" value="opcion3" (click)="answer9(true)"> Propina
+        </label>
+        <br><br>
+
+        <h3>10. Indique cuál es el significado de la palabra "Careless":</h3>
+        <label>
+            <input type="radio" name="pregunta10" id="pregunta10" value="opcion1" (click)="answer10(true)"> Descuidado
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta10" id="pregunta10" value="opcion2" (click)="answer10(false)"> Ocupado
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="pregunta10" id="pregunta10" value="opcion3" (click)="answer10(false)"> Cuidadoso
+        </label>
+        <br><br>
+
+        <button class="btn btn-primary next" (click)="onSubmit()" routerLinkActive="Active" routerLink="/certificado" >Siguiente</button>
+        <button type="reset" class="btn btn-primary limpi">Limpiar</button>
+    </form>
+</body>
+</html>

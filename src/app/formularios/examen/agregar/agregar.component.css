@@ -1,0 +1,45 @@
+.formulario{
+    width: 500px;
+    margin-left: 400px;
+}
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.next{
+    margin-left: 300px;
+    transition: 3s ease;
+    font-weight: bold;
+}
+.next:hover{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border: 0px transparent;
+    transition: 3s ease;
+}
+.limpi{
+    margin-left: 100px;
+    margin-top: -70px;
+    transition: 3s ease;
+    font-weight: bold;
+}
+.limpi:hover{
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border: 0px transparent;
+    transition: 3s ease;
+}
+.mes{
+    margin-top: -70px;
+    margin-left: 100px;
+}
+.year{
+    margin-top: -70px;
+    margin-left: 200px;
+}
+.fecha{
+    text-align: center;
+}

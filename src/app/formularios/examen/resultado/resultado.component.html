@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado total</title>
+</head>
+<body class="todo">
+    <br>
+    <h1>Resultado de tu Test</h1>
+ 
+        <div class="formulario">
+            <br>
+            <h3 *ngIf="nombres !== null">Hola {{nombres}}</h3>
+            <h3 *ngIf="EdadCalculada !== null">Tienes {{EdadCalculada}} años y tu signo zodiacal</h3>
+            <h3 *ngIf="EdadCalculada !== null">Es {{signoZodiacalChino}}  <img class="imagen" *ngIf="rutaImagen !== null" [src]="rutaImagen" alt="Signo Zodiacal"></h3>
+            <h3 *ngIf="total !== null">Tu calificación de Ingles es: {{total}}</h3>
+            <h3 *ngIf="mensaje !== null">{{mensaje}}</h3>
+           
+
+            <button class="btn btn-primary resul" (click)="mostrardatos()">Calcular Resultado</button>
+            <button class="btn btn-primary home" routerLink="/agregar">Realizar Test de nuevo</button>
+        </div>
+    
+</body>
+</html>

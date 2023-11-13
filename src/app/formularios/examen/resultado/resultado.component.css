@@ -1,0 +1,47 @@
+*{
+    text-align: center;
+}
+.formulario{
+    width: 500px;
+    margin-left: 400px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+.resul{
+    transition: 3s ease;
+    font-weight: bold;
+    margin-right: 200px;
+}
+.resul:hover{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border: 0px transparent;
+    transition: 3s ease;
+}
+.home{
+    transition: 3s ease;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+.home:hover{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border: 0px transparent;
+    transition: 3s ease;
+}
+.imagen{
+    width: 50px;
+    height: 50px;
+}

@@ -14,6 +14,7 @@
     margin-top: -44%;
     margin-left: 60%;
 }
- body{
-    background-image: ;
- }
+.fondo{
+    background-color: transparent;
+    color: black;
+}
